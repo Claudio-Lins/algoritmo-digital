@@ -1,7 +1,11 @@
 import '../styles/index.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const Layout = ({ children }) => <div className="layout">{children}</div>
 
-export default MyApp
+export default function App({ Component, pageProps }) {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
+}
