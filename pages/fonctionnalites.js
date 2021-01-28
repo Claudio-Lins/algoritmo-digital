@@ -11,7 +11,7 @@ export default function Fonctionnalites() {
             <h1 className="font-extrabold text-3xl text-gray-500 text-center py-4">
               Fonctionnalités
                         </h1>
-            <p className="font-light text-center text-gray-500 tracking-wide md:px-20">
+            <p className="font-light text-justify px-6 text-gray-500 tracking-wide md:px-20">
               Le Journal d’association rassemble les données principales du cœur
               de métier et fournit les fonctionnalités nécessaires pour les
               exploiter.
