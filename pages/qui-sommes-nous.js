@@ -20,7 +20,7 @@ export default function QuiSommesNous() {
                     </div>
                 </section>
 
-                <section className='mx-auto my-10'>
+                <section className='mx-auto my-10 lg:mx-40'>
                     <div className="md:flex md:justify-between md:space-x-4 items-center">
                         <div className='text-center'>
                             <div className='md:w-56 h-auto mx-auto'>
