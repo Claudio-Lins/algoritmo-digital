@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Fonctionnalites() {
   return (
     <Layout>
-      <div className='container min-h-screen mx-auto bg-gray-50'>
+      <div className='container min-h-screen mx-auto'>
 
         <section>
           <div>
@@ -71,7 +71,7 @@ export default function Fonctionnalites() {
                 <div className='px-16 pt-2 sm:px-6'>
                   <a href="#">
                     <Image
-                      src="/icons/icon-01.png"
+                      src="/icons/icon-04.png"
                       alt="Algoritmo Digital"
                       width={42}
                       height={33}

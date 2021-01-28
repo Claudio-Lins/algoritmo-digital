@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className='border-b-2 border-white'>
       <ul className="flex items-center justify-between p-8">
         <li>
         <Image
@@ -25,6 +25,14 @@ export default function Nav() {
           <Link href="/fonctionnalites">
             <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
             Fonctionnalités
+            </a>
+          </Link>
+        </li>
+
+        <li>
+          <Link href="/qui-sommes-nous">
+            <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
+            Qui sommes-nous ?
             </a>
           </Link>
         </li>
