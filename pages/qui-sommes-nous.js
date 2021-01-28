@@ -11,7 +11,7 @@ export default function QuiSommesNous() {
 
                 <section>
                     <div>
-                        <h1 className="font-extrabold text-3xl text-gray-500 text-center py-4">
+                        <h1 className="font-extrabold text-3xl text-gray-50 text-center py-4">
                         Qui sommes-nous ?
                         </h1>
                         <p className="font-light text-justify px-8 text-gray-500 tracking-wide md:px-20">

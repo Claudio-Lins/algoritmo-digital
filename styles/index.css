@@ -8,7 +8,7 @@
 
 html,
 body {
-  @apply bg-gray-200 box-content
+  @apply bg-gray-50 box-content
 }
 
 /* Write your own custom component styles here */
