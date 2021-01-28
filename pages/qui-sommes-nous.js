@@ -26,11 +26,11 @@ export default function QuiSommesNous() {
                             <div className='md:w-56 h-auto mx-auto'>
                                 <div className='px-16 pb-2 sm:px-6'>
                                     <a href="#">
-                                        <Image
-                                            src="/icons/icon-01.png"
+                                        <Image className='rounded-full'
+                                            src="/quem-somos/mihnea-niculescu.jfif.css"
                                             alt="Algoritmo Digital"
-                                            width={50}
-                                            height={38}
+                                            width={100}
+                                            height={100}
                                         />
                                         <h3 className="text-green-600 font-bold">
                                             Données personnelles des bénéficiaires de vos services
@@ -43,11 +43,11 @@ export default function QuiSommesNous() {
                             <div className='md:w-56 h-auto mx-auto'>
                                 <div className='px-16 pb-2 sm:px-6'>
                                     <a href="#">
-                                        <Image
-                                            src="/icons/icon-01.png"
+                                        <Image className='rounded-full'
+                                            src="/quem-somos/foto-paulo-lins.jpg"
                                             alt="Algoritmo Digital"
-                                            width={50}
-                                            height={38}
+                                            width={100}
+                                            height={100}
                                         />
                                         <h3 className="text-green-600 font-bold">
                                             Données personnelles des bénéficiaires de vos services
@@ -60,15 +60,16 @@ export default function QuiSommesNous() {
                             <div className='md:w-56 h-auto mx-auto'>
                                 <div className='px-16 pb-2 sm:px-6'>
                                     <a href="#">
-                                        <Image
-                                            src="/icons/icon-01.png"
+                                    <Image className='rounded-full'
+                                            src="/quem-somos/foto-charles-lins.png"
                                             alt="Algoritmo Digital"
-                                            width={50}
-                                            height={38}
+                                            width={100}
+                                            height={100}
                                         />
-                                        <h3 className="text-green-600 font-bold">
-                                            Données personnelles des bénéficiaires de vos services
-                                        </h3>
+                                        <div>
+                                            <span className="text-green-600">Charles</span>
+                                            <span className="text-gray-500"> Lins</span>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
