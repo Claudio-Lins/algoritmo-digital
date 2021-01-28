@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Fonctionnalites() {
   return (
     <Layout>
-      <div className='container min-h-screen mx-auto bg-gray-50'>
+      <div className='container min-h-screen mx-auto'>
 
         <section>
           <div>
