@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import build from 'next/dist/build'
 
 export default function Nav() {
   return (
@@ -39,10 +38,10 @@ export default function Nav() {
           {/* Mobile Button */}
           <div className='md:hidden flex items-center'>
             <button>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+          <svg className='w-6 h-6' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+</svg>
+</button>
           </div>
         </div>
         {/* Menu Mobile */}
