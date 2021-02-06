@@ -1,66 +1,64 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from "next/link";
+import Image from "next/image";
+import BtnMob from "./btnMob";
 
 //export default function Nav() {
 //return (
 const Nav = () => {
-
   return (
-
-    <nav className='bg-gray-100 py-4'>
-      <div className='max-w-5xl px-4 mx-auto'>
-        <div className='flex justify-between'>
-          <div className='flex justify-between items-center space-x-6'>
+    <nav className="bg-gray-100 py-4">
+      <div className="max-w-5xl px-4 mx-auto">
+        <div className="flex justify-between">
+          <div className="flex justify-between items-center space-x-6">
             <div>
               <Image
                 src="/logo-algoritmo-digital-70pct.png"
                 alt="Algoritmo Digital"
-                width={200}
-                height={50}
+                width={180}
+                height={45}
               />
             </div>
 
-            <div className='hidden md:flex space-x-6 justify-around'>
-
-              <div className='ml-10'>
+            <div className="hidden md:flex space-x-6 justify-around">
+              <div className="ml-10">
                 <Link href="/">
-                  <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
+                  <a className="hover:text-green-600">
                     <h3>Home</h3>
                   </a>
                 </Link>
               </div>
               {/*  */}
               {/* Concept */}
-              <div className='ml-10'>
+              <div className="ml-10">
                 <Link href="#">
-                  <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
+                  <a className="hover:text-green-500">
                     <h3>Concept</h3>
                   </a>
                 </Link>
               </div>
               {/*  */}
               {/* Fonctionnalités */}
-              <div>
+              <div className="">
                 <Link href="/fonctionnalites">
-                  <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
-                    <h3>Fonctionnalités</h3>
-                  </a>
+                  <button className="hover:text-green-500 hover:text-bold">
+                    Fonctionnalités
+                  </button>
                 </Link>
               </div>
               {/*  */}
               {/* Prix */}
-              <div className='ml-10'>
+              <div className="ml-10">
                 <Link href="#">
-                  <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
+                  <a>
                     <h3>Prix</h3>
                   </a>
                 </Link>
               </div>
               {/*  */}
               {/* Témoignages */}
-              <div className='ml-10'>
+              <div className="ml-10">
                 <Link href="#">
-                  <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
+                  <a>
                     <h3>Témoignages</h3>
                   </a>
                 </Link>
@@ -69,16 +67,16 @@ const Nav = () => {
               {/* Qui Mommes-nous */}
               <div>
                 <Link href="/qui-sommes-nous">
-                  <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
+                  <a>
                     <h3>Qui sommes-nous ?</h3>
                   </a>
                 </Link>
               </div>
               {/*  */}
               {/* Contact */}
-              <div className='ml-10'>
+              <div className="ml-10">
                 <Link href="#">
-                  <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
+                  <a>
                     <h3>Contact</h3>
                   </a>
                 </Link>
@@ -86,29 +84,39 @@ const Nav = () => {
               {/*  */}
             </div>
           </div>
-          
+
           {/* Mobile Button */}
-          <div className='md:hidden flex items-center'>
-            <button id='mobile-menu-button' className=''>
-              <svg className='w-6 h-6' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <div className="md:hidden flex items-center">
+            <button className="mobile-menu-button">
+              <svg
+                className="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             </button>
           </div>
         </div>
         {/* Menu Mobile */}
-        <div className='mobile-menu hidden md:hidden'>
-
-          <div className='ml-4'>
+        <div className="mobile-menu hidden md:hidden">
+          <div className="ml-4">
             <Link href="/">
-              <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
+              <a className="text-blue-500 no-underline dark:text-blue-300">
                 <h3>Home</h3>
               </a>
             </Link>
           </div>
-          <div className='ml-4'>
+          <div className="ml-4">
             <Link href="/">
-              <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
+              <a className="text-blue-500 no-underline dark:text-blue-300">
                 <h3>Home</h3>
               </a>
             </Link>
@@ -116,15 +124,14 @@ const Nav = () => {
         </div>
       </div>
     </nav>
-  )
-  const btn = document.querySelector('button#mobile-menu-button')
-  const menu = document.querySelector('.mobile-menu')
+  );
 
-  btn.addEventListener("click", () => {
-  menu.classList.toggle('hidden');
-  })
 
 }
+  // const btn = document.getElementsByClassName(".mobile-menu-button");
+  // const menu = document.getElementsByClassName(".mobile-menu");
 
-export default Nav
-
+  // btn.addEventListener("click", () => {
+  //   menu.classList.toggle("hidden");
+  // });
+export default Nav;
