@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import BtnMob from "./btnMob";
 
 //export default function Nav() {
 //return (
@@ -136,7 +135,7 @@ if (typeof window !== "undefined") {
   const menu = document.getElementById("mobile-menu");
 
 
-  
+
   btn.addEventListener("click", () => {
     menu.classList.toggle("hidden");
   });
