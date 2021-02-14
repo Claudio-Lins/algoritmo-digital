@@ -1,11 +1,15 @@
 import '../styles/index.css'
+import Layout from "../components/Layout"
 
-const Layout = ({ children }) => <div className="layout">{children}</div>
 
-export default function App({ Component, pageProps }) {
+
+function MyApp({ Component, pageProps }) {
   return (
+    
     <Layout>
       <Component {...pageProps} />
     </Layout>
   )
 }
+
+export default MyApp

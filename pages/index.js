@@ -1,12 +1,16 @@
-import Nav from '../components/nav'
-import Layout from '../components/layout'
+
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <Layout>
-      <div className=' h-80 flex justify-center items-center'>
-        Hello World.
+      <div className='flex justify-center items-center'>
+      {/* <div>
+     
+      </div> */}
+
+      <div className=' bg-blue-500'>
+        Hello!
       </div>
-    </Layout>
+      </div>
   )
 }
