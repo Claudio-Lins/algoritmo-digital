@@ -87,7 +87,7 @@ const Nav = () => {
 
           {/* Mobile Button */}
           <div className="md:hidden flex items-center">
-            <button className="mobile-menu-button">
+            <button id="mobile-menu-button">
               <svg
                 className="w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ const Nav = () => {
           </div>
         </div>
         {/* Menu Mobile */}
-        <div className="mobile-menu hidden md:hidden">
+        <div id='mobile-menu' className="hidden md:hidden">
           <div className="ml-4">
             <Link href="/">
               <a className="text-blue-500 no-underline dark:text-blue-300">
@@ -128,10 +128,16 @@ const Nav = () => {
 
 
 }
-  // const btn = document.getElementsByClassName(".mobile-menu-button");
-  // const menu = document.getElementsByClassName(".mobile-menu");
 
-  // btn.addEventListener("click", () => {
-  //   menu.classList.toggle("hidden");
-  // });
 export default Nav;
+
+if (typeof window !== "undefined") {
+  const btn = document.getElementById("mobile-menu-button");
+  const menu = document.getElementById("mobile-menu");
+
+
+  
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+}
